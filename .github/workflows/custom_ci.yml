@@ -48,8 +48,6 @@ jobs:
         uses: eregon/use-ruby-action@master
         with:
           ruby-version: ${{matrix.ruby}}
-      - name: Install bundler
-        run: gem install bundler
       - name: Bundle
         env:
           USE_DRY_TRANSFORMER_MASTER: ${{matrix.use_dry_transformer_master}}
